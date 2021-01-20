@@ -1,18 +1,23 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <G2Demo msg="g2" />
-    <G2PlotDemo msg="G2Plot" />
-    <F2Demo msg="f2" />
-    <G6Demo msg="g6" />
+    <G2Demo msg="G2-Demo" />
+    <G2PlotDemo msg="G2Plot-Demo" />
+    <F2Demo msg="F2-Demo" />
+    <G6Demo msg="G6-Demo" />
+    <X6Demo msg="X6-demo" />
+    <L7Demo msg="L7-demo" />
+    <AVADemo msg="AVA-demo" />
   </div>
 </template>
 
 <script>
 import G2Demo from './components/G2Demo'
 import G2PlotDemo from './components/G2PlotDemo'
-import F2Demo from './components/F2Demo.vue'
-import G6Demo from './components/G6Demo.vue'
+import F2Demo from './components/F2Demo/index'
+import G6Demo from './components/G6Demo/index'
+import X6Demo from './components/X6Demo/index'
+import L7Demo from './components/L7Demo/index'
+import AVADemo from './components/AVADemo/index'
 
 export default {
   name: 'App',
@@ -20,7 +25,10 @@ export default {
     G2Demo,
     G2PlotDemo,
     F2Demo,
-    G6Demo
+    G6Demo,
+    X6Demo,
+    L7Demo,
+    AVADemo
   }
 }
 </script>
@@ -33,5 +41,17 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+.wrapper-item{
+  display: block;
+  width: 45%;
+  /* height: 800px; */
+  position: relative;
+
 }
 </style>
